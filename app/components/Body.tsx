@@ -1,16 +1,6 @@
-import {
-  IconChevronDown,
-  IconDots,
-  IconEye,
-  IconLayersDifference,
-  IconPlus,
-  IconStack,
-  IconStack2,
-  IconX,
-} from "@tabler/icons-react";
 import React from "react";
 import { BodyHeader } from "./BodyHeader";
-import { SubHeader } from "./SubHeader";
+import { BodyNavbar } from "./BodyNavbar";
 
 export const Body = () => {
   return (
@@ -19,7 +9,7 @@ export const Body = () => {
         <BodyHeader />
       </div>
       <div className="w-4/6 ">
-        <SubHeader />
+        <BodyNavbar />
       </div>
     </div>
   );

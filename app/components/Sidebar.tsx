@@ -15,7 +15,7 @@ export const Sidebar = () => {
     <div className="gap-2 h-screen flex flex-col border-r border-gray-950 tabs-bordered">
       <a
         onClick={() => setActiveTab("link")}
-        className={`h-10 p-3 text-gray-500 ${
+        className={`h-11 p-3 text-gray-500 hover:bg-hover cursor-pointer ${
           activeTab === "link" && "border-l-indigo-500 border-l-2"
         } `}
       >
@@ -25,7 +25,7 @@ export const Sidebar = () => {
       </a>
       <div
         onClick={() => setActiveTab("graphql")}
-        className={`h-10 p-3 text-gray-500 ${
+        className={`h-11 p-3 text-gray-500 hover:bg-hover cursor-pointer ${
           activeTab === "graphql" && "border-l-indigo-500 border-l-2"
         } `}
       >
@@ -35,7 +35,7 @@ export const Sidebar = () => {
       </div>
       <div
         onClick={() => setActiveTab("www")}
-        className={`h-10 p-3 text-gray-500  ${
+        className={`h-11 p-3 hover:bg-hover text-gray-500  ${
           activeTab === "www" && "border-l-indigo-500 border-l-2"
         } `}
       >
@@ -45,7 +45,7 @@ export const Sidebar = () => {
       </div>
       <div
         onClick={() => setActiveTab("setting")}
-        className={`h-10 p-3 text-gray-500  ${
+        className={`h-11 p-3 hover:bg-hover text-gray-500  ${
           activeTab === "setting" && "border-l-indigo-500 border-l-2"
         } `}
       >

@@ -5,13 +5,7 @@
 :root {
   --background: #181818;
   --foreground: #1c1c1e;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #181818;
-    --foreground: #1c1c1e;
-  }
+  --bg-hover: #2a2a2d;
 }
 
 body {
