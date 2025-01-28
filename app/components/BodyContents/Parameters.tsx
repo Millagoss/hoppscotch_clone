@@ -16,7 +16,7 @@ type KeyValueDescription = {
   description: string;
 }[];
 const newKey = { id: 1, key: "", value: "", description: "" };
-export const Table = () => {
+export const Parameters = () => {
   const [data, setData] = useState<KeyValueDescription>([newKey]);
 
   const handleChange = (

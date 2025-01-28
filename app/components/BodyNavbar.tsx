@@ -2,18 +2,16 @@
 
 import React, { useState } from "react";
 
-const headers = [
-  { label: "Parameters", value: "parameters" },
-  { label: "Body", value: "body" },
-  { label: "Headers", value: "headers" },
-  { label: "Authorization", value: "authorization" },
-  { label: "Pre-request Script", value: "pre-request" },
-  { label: "Tests", value: "tests" },
-];
+type Props = {
+  setActiveTab: React.Dispatch<React.SetStateAction<string>>;
+  activeTab: string;
+  headers: {
+    label: string;
+    value: string;
+  }[];
+};
 
-export const BodyNavbar = () => {
-  const [activeTab, setActiveTab] = useState(headers[0].value);
-
+export const BodyNavbar = ({ headers, activeTab, setActiveTab }: Props) => {
   return (
     <div className="flex justify-between items-center">
       <div className="flex py-3 px-4 gap-6">
