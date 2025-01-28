@@ -56,9 +56,9 @@ export const BodyHeader = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn font-semibold text-xs "
+              className="text-text  border-r border-l border-border py-3 px-4 flex items-center gap-2 bg-transparent hover:text-gray-300 font-semibold text-xs "
             >
-              <IconStack2 className="size-4" />
+              <IconStack2 className="size-5" />
               Select Environment
               <IconChevronDown className="size-4" />
             </div>

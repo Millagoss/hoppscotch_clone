@@ -7,7 +7,7 @@ import {
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-between text-white px-2 py-[5px]">
+    <header className="flex items-center justify-between text-white px-2 py-2">
       <div className="text-xs pl-3 font-bold">HOPPSCOTCH</div>
 
       <div className="flex items-center gap-4">
@@ -26,7 +26,7 @@ export const Header = () => {
         <IconDownload className="size-5 text-gray-400" />
         <IconWorld className="size-5 text-gray-400" />
       </div>
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center gap-2">
         <button className="bg-[#182923] gap-2 flex items-center text-green-400 hover:bg-green-900 text-xs py-[6px] px-4 rounded-md border-[#134132] border">
           <IconCloud className="size-5" />
           Save My Workspace
