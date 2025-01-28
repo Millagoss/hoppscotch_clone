@@ -11,6 +11,9 @@ import React, { useState } from "react";
 import { RightSectionSidebar } from "./Sidebar";
 import { Folder } from "./contents/Folder";
 import { Stacks } from "./contents/Stacks";
+import TimeLine from "./contents/TimeLine";
+import Share from "./contents/Share";
+import CodeEditor from "./contents/CodeEditor";
 
 const getBodyContent = (activeTab: string) => {
   switch (activeTab) {
@@ -18,6 +21,12 @@ const getBodyContent = (activeTab: string) => {
       return <Folder />;
     case "stack":
       return <Stacks />;
+    case "clock":
+      return <TimeLine />;
+    case "share":
+      return <Share />;
+    case "code":
+      return <CodeEditor />;
 
     default:
       return <Folder />;

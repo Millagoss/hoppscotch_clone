@@ -39,7 +39,7 @@ export const BodyNavbar = ({ headers, activeTab, setActiveTab }: Props) => {
           "border-b-indigo-500 text-gray-200 border-b-2"
         } `}
       >
-        <p className={`${activeTab === "variables" && "text-gray-200"} `}>
+        <p className={`pr-3 ${activeTab === "variables" && "text-gray-200"} `}>
           Variables
         </p>
       </div>
