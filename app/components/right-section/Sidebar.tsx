@@ -24,8 +24,7 @@ export const RightSectionSidebar = ({
             key={h.value}
             onClick={() => setActiveTab(h.value)}
             className={`h-11 p-3 text-gray-500 cursor-pointer ${
-              activeTab === h.value &&
-              "border-l-indigo-500 text-indigo-500 border-l-2"
+              activeTab === h.value && "text-indigo-500"
             } `}
           >
             {h.label}

@@ -98,15 +98,15 @@ export const Parameters = () => {
                     />
                   </td>
                   <td className="border-border border">
-                    <div className="p-1 h-full flex items-center justify-center ">
-                      <IconCircleCheck className="text-green-500 size-5 cursor-pointer" />
+                    <div className="py-1 h-full flex items-center justify-center ">
+                      <IconCircleCheck className="text-green-500 size-[19px] cursor-pointer" />
                     </div>
                   </td>
                   <td className="border-border border-t border-b">
-                    <div className="p-1 h-full flex items-center justify-center">
+                    <div className="py-1 h-full flex items-center justify-center">
                       <IconTrash
                         onClick={() => handleDelete(item.id)}
-                        className="text-red-600 size-4 cursor-pointer"
+                        className="text-red-500 size-4 cursor-pointer"
                       />
                     </div>
                   </td>

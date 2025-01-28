@@ -10,7 +10,7 @@ export const Header = () => {
     <header className="flex items-center border-border border-b justify-between text-white py-2">
       <div className="text-xs pl-5 font-bold">HOPPSCOTCH</div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-3">
         <div className="relative w-80">
           <IconSearch className="size-4 absolute text-gray-400 top-2 left-3" />
           <input
@@ -23,8 +23,14 @@ export const Header = () => {
             <kbd className="text-[11px] bg-foreground px-2 rounded">K</kbd>
           </div>
         </div>
-        <IconDownload className="size-5 cursor-pointer text-gray-400" />
-        <IconWorld className="size-5 cursor-pointer text-gray-400" />
+        <div className="flex items-center gap-1">
+          <div className="hover:bg-hover px-2 cursor-pointer flex justify-center rounded-sm py-2">
+            <IconDownload className="size-4 text-gray-400" />
+          </div>
+          <div className="hover:bg-hover px-2 cursor-pointer flex justify-center rounded-sm py-2">
+            <IconWorld className="size-4 text-gray-400" />
+          </div>
+        </div>
       </div>
       <div className="flex items-center gap-2">
         <button className="bg-[#182923] gap-2 flex items-center text-green-400 hover:bg-green-900 text-xs py-[6px] px-4 rounded-md border-[#134132] border">
