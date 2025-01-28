@@ -12,7 +12,7 @@ export const Sidebar = () => {
   const [activeTab, setActiveTab] = useState("link");
 
   return (
-    <div className="gap-2 h-screen flex flex-col border-r border-gray-950 tabs-bordered">
+    <div className="gap-2  flex flex-col border-r border-gray-950 tabs-bordered">
       <a
         onClick={() => setActiveTab("link")}
         className={`h-11 p-3 text-gray-500 hover:bg-hover cursor-pointer ${

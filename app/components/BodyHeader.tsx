@@ -36,8 +36,6 @@ export const BodyHeader = () => {
   const [value, setValue] = useState("https://echo.hoppscotch.io");
   const [method, setMethod] = useState("GET");
 
-  const color = getColor(method);
-
   return (
     <div className="space-y-3 bg-background">
       <div className="w-full flex bg-foreground justify-between items-center">
@@ -78,12 +76,12 @@ export const BodyHeader = () => {
       </div>
 
       <div className="pl-6 flex gap-2 mt-3 items-center">
-        <div className="flex w-full h-10 gap-2 bg-foreground ">
+        <div className="flex w-full rounded-md h-10 gap-2 bg-foreground ">
           <div className="dropdown w-32">
             <div
               tabIndex={0}
               role="button"
-              className={`flex text-gray-200 justify-between cursor-pointer p-3 pl-8 bg-transparent gap-7 font-semibold text-[10px]`}
+              className={`flex text-gray-200 justify-between cursor-pointer items-center px-7 h-full pl-5 bg-transparent gap-7 font-bold text-[10px]`}
             >
               {method}
               <IconChevronDown className="size-4" />

@@ -41,8 +41,8 @@ export const Body = () => {
   };
 
   return (
-    <div className="w-full border-r border-gray-950">
-      <div className="w-4/6 bg-[#1c1c1e]">
+    <div className="w-full border-r">
+      <div className="w-4/6 bg-foreground">
         <BodyHeader />
       </div>
       <div className="w-4/6 ">

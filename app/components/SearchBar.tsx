@@ -27,7 +27,7 @@ export const Header = () => {
         <IconWorld className="size-5 text-gray-400" />
       </div>
       <div className="flex items-center space-x-4">
-        <button className="bg-[#182923] gap-2 flex items-center text-green-400 hover:bg-green-900 text-xs py-2 px-4 rounded-md border-[#134132] border">
+        <button className="bg-[#182923] gap-2 flex items-center text-green-400 hover:bg-green-900 text-xs py-[6px] px-4 rounded-md border-[#134132] border">
           <IconCloud className="size-5" />
           Save My Workspace
         </button>

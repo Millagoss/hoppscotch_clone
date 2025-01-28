@@ -96,14 +96,18 @@ export const Parameters = () => {
                       }
                     />
                   </td>
-                  <td className="p-1 border-border border">
-                    <IconCheck className="text-green-400 size-4 cursor-pointer" />
+                  <td className="border-border border">
+                    <div className="p-1 h-full flex items-center justify-center ">
+                      <IconCheck className="text-green-400 size-4 cursor-pointer" />
+                    </div>
                   </td>
-                  <td className="border-border p-1 border text-center">
-                    <IconTrash
-                      onClick={() => handleDelete(item.id)}
-                      className="text-red-400 size-4 cursor-pointer"
-                    />
+                  <td className="border-border border">
+                    <div className="p-1 h-full flex items-center justify-center">
+                      <IconTrash
+                        onClick={() => handleDelete(item.id)}
+                        className="text-red-400 size-4 cursor-pointer"
+                      />
+                    </div>
                   </td>
                 </tr>
               ))}
