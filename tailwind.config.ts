@@ -12,6 +12,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         hover: "var(--bg-hover)",
+        border: "var(--border)",
+        text: "var(--text)",
       },
     },
   },

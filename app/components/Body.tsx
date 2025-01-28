@@ -1,6 +1,7 @@
 import React from "react";
 import { BodyHeader } from "./BodyHeader";
 import { BodyNavbar } from "./BodyNavbar";
+import { Table } from "./Table";
 
 export const Body = () => {
   return (
@@ -10,6 +11,7 @@ export const Body = () => {
       </div>
       <div className="w-4/6 ">
         <BodyNavbar />
+        <Table />
       </div>
     </div>
   );
