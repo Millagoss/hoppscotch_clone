@@ -6,6 +6,7 @@ import {
   IconQuestionMark,
   IconEdit,
   IconPlus,
+  IconCircleCheck,
 } from "@tabler/icons-react";
 import React, { useState } from "react";
 
@@ -53,13 +54,13 @@ export const Parameters = () => {
           <IconPlus onClick={handleAdd} className="size-4 cursor-pointer" />
         </div>
       </div>
-      <div className="p-2">
+      <div className="py-2">
         <div className="overflow-x-auto text-gray-100">
           <table className="w-full border-collapse">
             <tbody>
               {data.map((item, index) => (
                 <tr key={index}>
-                  <td className="border-border border w-10"></td>
+                  <td className="border-border border-t border-b w-10"></td>
                   <td className="border-border py-1 border">
                     <input
                       type="text"
@@ -98,14 +99,14 @@ export const Parameters = () => {
                   </td>
                   <td className="border-border border">
                     <div className="p-1 h-full flex items-center justify-center ">
-                      <IconCheck className="text-green-400 size-4 cursor-pointer" />
+                      <IconCircleCheck className="text-green-500 size-5 cursor-pointer" />
                     </div>
                   </td>
-                  <td className="border-border border">
+                  <td className="border-border border-t border-b">
                     <div className="p-1 h-full flex items-center justify-center">
                       <IconTrash
                         onClick={() => handleDelete(item.id)}
-                        className="text-red-400 size-4 cursor-pointer"
+                        className="text-red-600 size-4 cursor-pointer"
                       />
                     </div>
                   </td>

@@ -3,10 +3,12 @@
 import React, { useState } from "react";
 import { BodyHeader } from "./BodyHeader";
 import { BodyNavbar } from "./BodyNavbar";
-import { Parameters } from "./BodyContents/Parameters";
-import { BodySection } from "./BodyContents/Body";
-import { Headers } from "./BodyContents/Headers";
-import { Authorization } from "./BodyContents/Authorization";
+import { Parameters } from "./body-section/Parameters";
+import { BodySection } from "./body-section/Body";
+import { Headers } from "./body-section/Headers";
+import { Authorization } from "./body-section/Authorization";
+import { Sidebar } from "./Sidebar";
+import { RightSectionWrapper } from "./right-section/Wrapper";
 
 const headers = [
   { label: "Parameters", value: "parameters" },
@@ -41,17 +43,22 @@ export const Body = () => {
   };
 
   return (
-    <div className="w-full border-r">
-      <div className="w-4/6 bg-foreground">
-        <BodyHeader />
+    <div className="flex h-full w-full">
+      <div className="w-8/12">
+        <div className="bg-foreground">
+          <BodyHeader />
+        </div>
+        <div>
+          <BodyNavbar
+            activeTab={activeTab}
+            headers={headers}
+            setActiveTab={setActiveTab}
+          />
+          {getBodyContent()}
+        </div>
       </div>
-      <div className="w-4/6 ">
-        <BodyNavbar
-          activeTab={activeTab}
-          headers={headers}
-          setActiveTab={setActiveTab}
-        />
-        {getBodyContent()}
+      <div className="w-4/12">
+        <RightSectionWrapper />
       </div>
     </div>
   );
