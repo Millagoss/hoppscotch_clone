@@ -112,7 +112,7 @@ export const BodyHeader = () => {
             value={value}
             onChange={(e) => setValue(e.currentTarget.value)}
             placeholder="Type here"
-            className="focus:border-none text-gray-300 text-sm bg-transparent w-full max-w-xs"
+            className="focus:outline-none focus:border-none text-gray-300 text-sm bg-transparent w-full max-w-xs"
           />
         </div>
         <div className="dropdown">

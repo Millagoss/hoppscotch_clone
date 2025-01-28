@@ -18,9 +18,9 @@ export const Header = () => {
             placeholder='Try "Share request"'
             className="w-full bg-[#262626] text-xs text-gray-400 rounded-md py-2 px-4 pl-10 focus:outline-none"
           />
-          <div className="absolute top-[16px] left-3/4 transform -translate-y-1/2 text-gray-500">
-            <kbd className="text-xs bg-gray-700 px-1 rounded">Ctrl</kbd> +{" "}
-            <kbd className="text-xs bg-gray-700 px-1 rounded">K</kbd>
+          <div className="absolute top-[16px] left-3/4 transform -translate-y-1/2 gap-1 flex text-gray-500">
+            <kbd className="text-[11px] bg-foreground px-2 rounded">Ctrl</kbd>
+            <kbd className="text-[11px] bg-foreground px-2 rounded">K</kbd>
           </div>
         </div>
         <IconDownload className="size-5 cursor-pointer text-gray-400" />

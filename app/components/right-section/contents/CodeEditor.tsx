@@ -1,7 +1,5 @@
 import React from "react";
 
-const CodeEditor = () => {
+export const CodeEditor = () => {
   return <div>CodeEditor</div>;
 };
-
-export default CodeEditor;
