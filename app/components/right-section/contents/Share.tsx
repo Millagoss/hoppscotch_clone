@@ -1,11 +1,4 @@
-import {
-  IconDots,
-  IconFolderDown,
-  IconPlus,
-  IconQuestionMark,
-  IconWorld,
-  IconWorldWww,
-} from "@tabler/icons-react";
+import { IconPlus, IconQuestionMark } from "@tabler/icons-react";
 import React from "react";
 
 export const Share = () => {

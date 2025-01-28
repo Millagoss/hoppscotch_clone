@@ -1,7 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
-
 type Props = {
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;
   activeTab: string;

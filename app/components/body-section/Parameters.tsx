@@ -2,7 +2,6 @@
 
 import {
   IconTrash,
-  IconCheck,
   IconQuestionMark,
   IconEdit,
   IconPlus,

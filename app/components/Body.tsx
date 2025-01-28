@@ -7,7 +7,6 @@ import { Parameters } from "./body-section/Parameters";
 import { BodySection } from "./body-section/Body";
 import { Headers } from "./body-section/Headers";
 import { Authorization } from "./body-section/Authorization";
-import { Sidebar } from "./Sidebar";
 import { RightSectionWrapper } from "./right-section/Wrapper";
 
 const headers = [

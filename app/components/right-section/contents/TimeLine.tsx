@@ -1,8 +1,3 @@
-import {
-  IconFolderDown,
-  IconPlus,
-  IconQuestionMark,
-} from "@tabler/icons-react";
 import React from "react";
 
 export const TimeLine = () => {
